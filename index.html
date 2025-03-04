@@ -9,20 +9,21 @@
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 <script src="https://kit.fontawesome.com/d5cad3faf1.js" crossorigin="anonymous"></script>
 </head>
-<body class="bg-[#F4F7FF] mx-36">
+<body class="bg-[#F4F7FF]">
     <!-- navbar here -->
-     <nav class="flex justify-between my-10 p-12 bg-white rounded-3xl"> 
-        <div class="nav-icons flex items-center gap-4">
-            <img src="assets/logo.png" alt="">
-            <h1 class="text-4xl">Dev<span class="font-bold">Board</span></h1>
+<nav class=" mx-36 py-9">
+    <div class="navbar flex justify-between items-center my-6 px-5 py-6 rounded-2xl bg-white">
+        <div class="navbar-logo text-4xl flex justify-center">
+            <img class="mr-3" src="./assets/logo.png" alt="logo">Dev<span class="font-bold">Board</span>
         </div>
-        <div class="right-icons flex items-center gap-10">
-            <i class="fa-solid fa-square-check text-blue-800 text-2xl bg-[#F4F7FF] p-6 rounded-full">  <span class="text-black px-2"> 24</span></i> 
-                <img  class="bg-[#F4F7FF] p-5 rounded-full" src="assets/theme-btn.png" alt="">
+        <div class="navbar_button flex justify-center items-center">
+            <button class="flex bg-blue-50 p-3  rounded-3xl"><img src="./assets/checkbox.png" alt="checkbox"> <p id="total-task" class="ml-2 font-bold text-3xl">23</p></button>
+            <button><img id="color-button" class="ml-10 bg-blue-50 p-3 rounded-full cursor-pointer" src="./assets/theme-btn.png" alt="theme-btn"></button>
         </div>
-     </nav>
+    </div>
+</nav>
      <!-- main sectiopn here -->
-     <main class="flex mb-12">
+     <main class="flex mb-12  mx-36 py-9">
         <div class="main_section bg-white rounded-2xl py-8 col-span-3 w-3/4">
             <!-- main header section -->
             <div class="main-header grid grid-cols-4 p-6 pb-8">
@@ -32,7 +33,7 @@
                     </div> 
                     <div class="assigned-text ml-5 flex flex-col ">
                         <p>Task Assigned </p>
-                        <p id="task" class="font-bold text-3xl">6</p>
+                        <p id="checked-task" class="font-bold text-3xl">6</p>
                     </div>
                 </div>
                 <div id="discover-content" class="discover py-6 pl-10  flex item-center rounded-xl mx-6 col-span-2 bg-[linear-gradient(to_right,#3752FD,#6C7FFA,#9BA8F8)]">
@@ -146,8 +147,8 @@
             </div>
         </div>
     </main>
-
-
-</main>
+    <script src="js/script.js"></script>
 </body>
 </html>
+
+<!-- project end -->

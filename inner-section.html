@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taskmeeter.netlify.app</title>
+     <!-- google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+     <!-- tailwind link -->
+     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="px-24 mx-auto bg-blue-50">
+    <div class="navbar flex justify-between items-center my-6 px-5 py-6 rounded-2xl bg-white">
+        <div class="navbar-logo text-4xl flex justify-center">
+            <img class="mr-3" src="./assets/logo.png" alt="logo">Dev<span class="font-bold">Board</span>
+        </div>
+        <div class="navbar_button flex justify-center items-center">
+            <button id="back-btn" class="bg-purple-700 text-white rounded px-5 py-3 cursor-pointer">Back to Dask</button>
+        </div>
+    </div>
+    <!-- title -->
+    <div class="">
+        <h1 class="text-center font-bold text-2xl">Blog</h1>
+    </div>
+      <!-- about blog -->
+    <div class="">
+        <div class="bg-white rounded-2xl mt-10 px-5 mb-4">
+            <p class="text-2xl font-bold border-dotted border-b-2 border-b-gray-200 py-4">
+                Question 1: what are the different ways to select an element from the DOM?</p>
+            <p class="py-4 text-xl">
+                getElementById, querySelector, querySelectorAll, getElementsByClassName, getElementsByTagName, getElementsByName, getElementsByTagNameNS, getElementsByClassNameNS and also more.
+            </p>
+        </div>
+        <div class="bg-white rounded-2xl mt-10 px-5 mb-4">
+            <p class="text-2xl font-bold border-dotted border-b-2 border-b-gray-200 py-4">
+                Question 2: what is the different innerHTML, innerText and textcontent?
+            </p>
+            <p class="py-4 text-xl">
+                innerHTML gets/sets HTML content, innerText gets/sets visible text, and textContent gets/sets all text, including hidden thats it.
+            </p>
+        </div>
+        <div class="bg-white rounded-2xl mt-10 px-5 mb-4">
+            <p class="text-2xl font-bold border-dotted border-b-2 border-b-gray-200 py-4">
+                Question 3: what is the delegation in DOM?
+            </p>
+            <p class="py-4 text-xl">Don't know🥲</p>
+        </div>
+        <div class="bg-white rounded-2xl mt-10 px-5 mb-4">
+            <p class="text-2xl font-bold border-dotted border-b-2 border-b-gray-200 py-4">
+                Question 4: what is event bobbling in DOM?
+            </p>
+            <p class="py-4 text-xl">
+                first it goes to the target element and then come up like bubble.
+            </p>
+        </div>
+        <div class="bg-white rounded-2xl mt-10 px-5 mb-4">
+            <p class="text-2xl font-bold border-dotted border-b-2 border-b-gray-200 py-4">
+                Question 5: How do you create add and remove element from a array?
+            </p>
+            <p class="py-4 text-xl">
+                Use push() to add an element and pop() to remove an element from the end.
+            </p>
+        </div>
+    </div>
+    <script>
+        const backBtn = document.getElementById('back-btn');
+        backBtn.addEventListener('click', () => {
+            window.location.href = 'index.html';
+        });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+<!-- project - end -->
